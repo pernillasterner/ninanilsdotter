@@ -1,6 +1,8 @@
-## Demo
+ <img src="https://ps-ninanilsdotter.netlify.app/hero.jpg" alt="Nina Nilsdotter Hero">
 
-[You can check out a Demo of this boilerplate here.](https://ps-ninanilsdotter.netlify.app/)
+## View the project live
+
+[Nina Nilsdotter](https://ps-ninanilsdotter.netlify.app/)
 
 ## Getting Started
 
