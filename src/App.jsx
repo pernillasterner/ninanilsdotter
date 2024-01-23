@@ -1,9 +1,10 @@
+import { NavBar } from "./components/NavBar/Navbar";
 
 export const App = () => {
   
   return (
-    <>
-      <h1>Nina Nilsdotter</h1>
-    </>
+   <main>
+    <NavBar/>
+   </main>
   );
 };
