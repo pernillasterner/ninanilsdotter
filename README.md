@@ -1,8 +1,8 @@
- <img src="https://ps-ninanilsdotter.netlify.app/hero.jpg" alt="Nina Nilsdotter Hero">
+ <img src="https://ninanilsdotter.netlify.app/hero.jpg" alt="Nina Nilsdotter Hero">
 
 ## View the project live
 
-[Nina Nilsdotter](https://ps-ninanilsdotter.netlify.app/)
+[Nina Nilsdotter](https://ninanilsdotter.netlify.app/)
 
 ## Getting Started
 
