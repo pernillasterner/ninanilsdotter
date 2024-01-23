@@ -1,4 +1,4 @@
- <img src="https://ninanilsdotter.netlify.app/hero.jpg" alt="Nina Nilsdotter Hero">
+ <img src="https://ninanilsdotter.netlify.app/screenshot.png" alt="Nina Nilsdotter Hero">
 
 ## View the project live
 
