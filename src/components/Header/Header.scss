@@ -1,0 +1,49 @@
+.header {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  line-height: 1;
+  pointer-events: none;
+
+  .header-wrapper {
+    padding: 2vw;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    pointer-events: auto;
+
+    .header-inner {
+      max-width: 1800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: inherit;
+    }
+  }
+
+  // HEADER DESKTOP
+  .header-display-desktop {
+    display: block;
+    background-color: red;
+  }
+
+  .header-display-mobile {
+    display: none;
+  }
+
+  // HEADER MOBILE
+  @media screen and (max-width: 767px) and (orientation: portrait) {
+    .header-display-desktop {
+      display: none;
+    }
+    .header-display-mobile {
+      display: block;
+      background-color: lightcoral;
+    }
+  }
+}
