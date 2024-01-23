@@ -1,0 +1,23 @@
+.header-title {
+  flex-grow: 0;
+  flex-shrink: 0;
+  backface-visibility: hidden;
+
+  .header-title-logo {
+    width: auto;
+    // TODO: lägg tillbaka
+    // font-size: 0;
+
+    a {
+      display: inline-block;
+      max-width: 100%;
+      max-height: 120px;
+    }
+
+    img {
+      width: auto;
+      max-width: 100%;
+      max-height: 120px;
+    }
+  }
+}

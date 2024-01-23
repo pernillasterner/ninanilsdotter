@@ -1,13 +1,13 @@
 import { Footer } from "./components/Footer/Footer";
-import { NavBar } from "./components/NavBar/NavBar";
+import { Header } from "./components/Header/Header";
 import { Home } from "./pages/Home";
 
 export const App = () => {
   return (
     <>
-      <NavBar />
-      <Home />
-      <Footer />
+      <Header />
+      {/* <Home />
+      <Footer /> */}
     </>
   );
 };

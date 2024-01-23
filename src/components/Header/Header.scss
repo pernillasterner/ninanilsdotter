@@ -1,4 +1,5 @@
 .header {
+  background-color: lightgrey;
   z-index: 10;
   position: absolute;
   top: 0;
@@ -24,12 +25,22 @@
       width: 100%;
       height: inherit;
     }
+
+    .header-title-nav-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      flex: 1 0 67%;
+      align-items: center;
+    }
   }
 
   // HEADER DESKTOP
   .header-display-desktop {
-    display: block;
-    background-color: red;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .header-display-mobile {
@@ -42,8 +53,11 @@
       display: none;
     }
     .header-display-mobile {
-      display: block;
-      background-color: lightcoral;
+      display: flex;
+      position: relative;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
     }
   }
 }

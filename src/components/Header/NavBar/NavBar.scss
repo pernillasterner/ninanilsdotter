@@ -1,3 +1,22 @@
 .header-nav {
-  background-color: lightgreen;
+  text-align: right;
+  margin-left: auto;
+  padding-left: 2.2vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  .header-nav-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    .header-nav-item {
+      text-transform: uppercase;
+      margin-left: 1.6vw;
+
+      a {
+        font-weight: 700;
+      }
+    }
+  }
 }

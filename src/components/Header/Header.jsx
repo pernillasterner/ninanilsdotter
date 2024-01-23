@@ -12,14 +12,18 @@ export const Header = () => {
             className="header-display-desktop"
             data-content-field="site-title"
           >
-            <TitleLogo />
-            <NavBar />
+            <div className="header-title-nav-wrapper">
+              {/* Title and Navigation */}
+              <TitleLogo />
+              <NavBar />
+            </div>
           </div>
           {/* Menu Mobile */}
           <div
             className="header-display-mobile"
             data-content-field="site-title"
           >
+            {/* Title and Navigation */}
             <TitleLogo />
             <NavBar />
           </div>
