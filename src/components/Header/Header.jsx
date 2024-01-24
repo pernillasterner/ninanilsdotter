@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { TitleLogo } from "./TitleLogo/TitleLogo";
 import { NavBar } from "./NavBar/NavBar";
+import { Burger } from "./Burger/Burger";
 
 export const Header = () => {
   return (
@@ -23,12 +24,15 @@ export const Header = () => {
             className="header-display-mobile"
             data-content-field="site-title"
           >
-            {/* Title and Navigation */}
-            <TitleLogo />
-            <NavBar />
+            <div className="header-title-nav-wrapper">
+              {/* Title and Navigation */}
+              <TitleLogo />
+            </div>
+            <Burger />
           </div>
         </div>
       </div>
+      {/* (Mobile Menu Navigation) */}
     </header>
   );
 };

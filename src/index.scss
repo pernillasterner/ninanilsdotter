@@ -14,6 +14,10 @@
   --clr-white: #fff;
   --clr-black: #000;
   --clr-text: #333;
+
+  --siteBackgroundColor: #e3e1dd;
+  --headerBackgroundColor: #28282870;
+  --navigationLinkColor: var(--clr-white);
 }
 
 html {
@@ -34,7 +38,7 @@ body {
   position: relative;
   max-width: 100vw;
   min-height: 100vh;
-  background-color: #f1f5f8;
+  background-color: var(--siteBackgroundColor);
 }
 
 main {
@@ -78,4 +82,12 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   line-height: 1.5em;
+}
+
+button {
+  text-transform: none;
+  line-height: normal;
+  // font-family: inherit;
+  // font-size: 100%;
+  // margin: 0;
 }
