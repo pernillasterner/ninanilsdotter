@@ -1,0 +1,17 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  padding: var(--general-padding);
+  .about-img,
+  .about-content {
+    width: 50%;
+  }
+
+  .about-content {
+    padding: var(--general-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
