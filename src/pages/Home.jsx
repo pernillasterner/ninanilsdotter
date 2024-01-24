@@ -1,4 +1,4 @@
-import { About } from "../components/Blocks/About";
+import { About } from "../components/Blocks/About/About";
 import { Hero } from "../components/Blocks/Hero";
 import "./Home.scss";
 
