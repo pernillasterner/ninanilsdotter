@@ -1,5 +1,10 @@
+import { Hero } from "../components/Blocks/Hero";
 import "./Home.scss";
 
 export const Home = () => {
-  return <main>Home</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
