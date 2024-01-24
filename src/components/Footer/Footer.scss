@@ -1,3 +1,14 @@
 footer {
-  background-color: lightyellow;
+  background-color: var(--footerBackgroundColor);
+  padding: var(--general-padding);
+  display: flex;
+  justify-content: center;
+
+  .contact {
+    text-align: center;
+
+    button {
+      background-color: var(--contactButton);
+    }
+  }
 }
