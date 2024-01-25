@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import heroImage from "../../../public/hero-molecular.jpg";
+import heroImage from "/hero-molecular.jpg";
 
 export const Hero = () => {
   return (

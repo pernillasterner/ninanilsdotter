@@ -1,0 +1,33 @@
+.product-container {
+  display: flex;
+
+  .left-box,
+  .right-box {
+    width: 50%;
+  }
+
+  .left-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .right-box {
+    background-color: #f4f4f4;
+    padding: var(--general-padding);
+
+    .product-list {
+      margin-top: 2rem;
+      .product-btn {
+        border-top: 1px solid var(--clr-black);
+        padding: var(--general-smaller-padding) 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .overflow-hidden {
+      overflow: hidden;
+      height: 0px;
+    }
+  }
+}
