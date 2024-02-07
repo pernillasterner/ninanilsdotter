@@ -21,13 +21,18 @@ export const Hero = () => {
     // </section>
 
     <section className="hero-container">
+      <video className="hero-video" src={heroVideo} autoPlay loop playsInline>
+        <source src={heroVideo} type="video/mp4"></source>
+      </video>
       <video
-        className="hero-video"
+        className="hero-video mobile"
         src={heroVideo}
         autoPlay
         loop
-        playsinline
-      ></video>
+        playsInline
+      >
+        <source src={heroVideo} type="video/mp4"></source>
+      </video>
       <div className="hero-content">
         <h1 className="hero-title">Välbefinnande och balans</h1>
         <p className="hero-text">

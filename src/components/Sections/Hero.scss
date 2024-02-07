@@ -12,7 +12,7 @@
 
   &::before {
     content: "";
-    background-color: rgba(0, 92, 76, 0.28);
+    background-color: rgba(7, 88, 0, 0.28);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -26,6 +26,16 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    &.mobile {
+      display: none;
+      @media screen and (max-width: 767px) and (orientation: portrait) {
+        display: block;
+      }
+    }
+    @media screen and (max-width: 767px) and (orientation: portrait) {
+      display: none;
+    }
   }
 
   .hero-content {
@@ -41,9 +51,15 @@
 
     h1 {
       font-size: 3.5rem;
+      @media screen and (max-width: 767px) and (orientation: portrait) {
+        font-size: 2.5rem;
+      }
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      @media screen and (max-width: 767px) and (orientation: portrait) {
+        font-size: 0.9rem;
+      }
     }
     button {
       background-color: var(--bookingButton);
