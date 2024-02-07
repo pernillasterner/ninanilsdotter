@@ -14,8 +14,14 @@ export const Footer = () => {
           </div>
           <div className="adress-info">
             {/* <p className="mail">info@ninanilsdotter.se</p> */}
-            <p className="adress">Luntmakargatan 70, 111 51 Stockholm</p>
-            <p className="telefon">08 - 540 88 88</p>
+            <h3 className="adress">Luntmakargatan 70, 111 51 Stockholm</h3>
+            <h3 className="telefon">08 - 540 88 88</h3>
+            <p>
+              Nina Nilsdotter | All rights reserved. Site build and designed by{" "}
+              <a href="#" target="_blank">
+                Pernilla Sterner
+              </a>
+            </p>
           </div>
         </div>
       </div>
