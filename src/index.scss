@@ -18,15 +18,21 @@
 
   --siteBackgroundColor: var(--clr-grey-8);
   --headerBackgroundColor: #28282870;
-  --footerBackgroundColor: #e3e1dd;
+  --footerBackgroundColor: #f2f2f2;
   --navigationLinkColor: var(--clr-white);
 
   --bookingButton: var(--clr-primary);
-  --contactButton: var(--clr-black);
+  --bookingButtonHover: #46c8c899;
+  --contactButton: #3b3b3b;
+  --contactButtonHover: #3b3b3bb2;
 
-  --general-padding: 35px;
-  --general-smaller-padding: 20px;
-  --general-mini-padding: 10px;
+  --general-padding: 1.75em;
+  --general-smaller-padding: 1em;
+  --general-mini-padding: 0.7em;
+
+  --general-margin: 1.75em;
+  --general-smaller-margin: 1em;
+  --general-mini-margin: 0.7em;
 }
 
 html {
@@ -94,11 +100,17 @@ p {
 }
 
 button {
-  text-transform: none;
+  margin: var(--general-smaller-margin) 0;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  text-transform: uppercase;
   line-height: normal;
   border: none;
   font-family: inherit;
   font-size: 100%;
-  margin: 0;
   background-color: transparent;
+  font-weight: 500;
+  padding: var(--general-smaller-padding) var(--general-padding);
+  transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
+  cursor: pointer;
 }
