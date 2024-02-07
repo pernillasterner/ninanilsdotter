@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   position: relative;
   color: var(--clr-white);
 
@@ -49,6 +49,10 @@
     justify-content: center;
     text-align: center;
     max-width: 1000px;
+    margin-bottom: 10em;
+    @media screen and (max-width: 767px) and (orientation: portrait) {
+      margin-bottom: 5em;
+    }
 
     h1 {
       font-size: 3.5rem;
