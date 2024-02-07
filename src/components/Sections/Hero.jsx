@@ -6,6 +6,8 @@ export const Hero = () => {
   return (
     <section className="hero-container">
       <video
+        width={1411}
+        height={731}
         className="hero-video"
         src={heroVideo}
         poster={heroImage}
@@ -16,6 +18,8 @@ export const Hero = () => {
         <source src={heroVideo} type="video/mp4"></source>
       </video>
       <video
+        width={1411}
+        height={731}
         className="hero-video mobile"
         src={heroVideo}
         poster={heroImage}
@@ -31,7 +35,7 @@ export const Hero = () => {
           För mig innebär bra hud- och kroppsvård en bit på vägen till
           välbefinnande och att känna sig i balans och lycklig med sig själv.
         </p>
-        <button className="hero-btn">
+        <button className="hero-btn" aria-label="Boka Nu">
           <a href="#contact-container">boka nu</a>
         </button>
       </div>
