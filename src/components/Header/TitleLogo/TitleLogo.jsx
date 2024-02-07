@@ -1,4 +1,5 @@
 import "./TitleLogo.scss";
+import headerLogo from "/logo.svg";
 
 export const TitleLogo = () => {
   return (
@@ -6,11 +7,8 @@ export const TitleLogo = () => {
       {/* Title */}
       <div className="header-title-logo">
         <a href="/">
-          {/* <img
-            src="http://ninanilsdotter.se//wp-content/uploads/2019/01/nina_nilsdotter_logo_transparent.png"
-            alt="Nina Nilsdotter"
-          /> */}
-          ninanilsdotter
+          <img src={headerLogo} alt="Nina Nilsdotter" />
+          {/* ninanilsdotter */}
         </a>
       </div>
     </div>

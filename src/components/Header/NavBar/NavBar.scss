@@ -13,6 +13,13 @@
     .header-nav-item {
       text-transform: uppercase;
       margin-left: 1.6vw;
+      a {
+        transition: background-color 0.1s 0s ease-in-out,
+          color 0.1s 0s ease-in-out;
+        &:hover {
+          color: rgba(255, 255, 255, 0.74);
+        }
+      }
     }
   }
 }
