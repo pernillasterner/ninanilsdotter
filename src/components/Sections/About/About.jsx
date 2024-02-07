@@ -10,20 +10,17 @@ export const About = () => {
         <img src={aboutNinaImage} alt="Nina Nilsdotter" />
       </div>
       <div className="about-content">
-        <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor.
-        </h2>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor.
         </p>
         <div className="signature">
-          <img src={signatureImage} alt="Signature" />
+          <img src={signatureImage} alt="Signature" width={553} height={257} />
         </div>
       </div>
-      <AboutBanner />
+      {/* <AboutBanner /> */}
     </section>
   );
 };

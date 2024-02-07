@@ -8,8 +8,8 @@ export const Home = () => {
   return (
     <main>
       <Hero />
-      {/* <About />
-      <Product />
+      <About />
+      {/* <Product />
       <Treatment /> */}
     </main>
   );
