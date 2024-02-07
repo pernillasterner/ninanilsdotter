@@ -10,13 +10,38 @@
   background-size: cover;
   background-position: center;
 
+  &::before {
+    content: "";
+    background-color: rgba(0, 92, 76, 0.28);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+  }
+
+  .hero-video {
+    inset: 0;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+
   .hero-content {
     padding: var(--general-padding);
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+
     h1 {
-      font-size: 5.5rem;
+      font-size: 3.5rem;
     }
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     button {
       background-color: var(--bookingButton);
