@@ -1,5 +1,7 @@
 import "./Product.scss";
-import prodImg from "/nimue.jpg";
+import prodImg from "/ocean.jpg";
+import iconArrowUp from "../../../assets/icon_arrow-up.svg";
+import iconArrowDown from "../../../assets/icon_arrow-down.svg";
 
 export const Product = () => {
   return (
@@ -17,9 +19,9 @@ export const Product = () => {
           <div className="product-item">
             <button className="product-btn" type="button">
               <div className="product-title">Nimue</div>
-              <span>SVG</span>
+              <img src={iconArrowUp} alt="Icon Contact" />
             </button>
-            <div className="overflow-hidden">
+            <div className="">
               Den nya generationens derma cosmeceutical. NIMUE motarbetar hudens
               biologiska nedbrytning genom att arbeta med den rätta
               koncentrationen i de rätta kombinationerna och i de rätta
@@ -32,7 +34,7 @@ export const Product = () => {
           <div className="product-item">
             <button className="product-btn" type="button">
               <div className="product-title">pHformula</div>
-              <span>SVG</span>
+              <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden">
               pHformula – är en pharma-cosmeceutical vilken är i gränslandet
@@ -46,7 +48,7 @@ export const Product = () => {
           <div className="product-item">
             <button className="product-btn" type="button">
               <div className="product-title">DrK Dermal Health Care</div>
-              <span>SVG</span>
+              <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
           </div>
@@ -54,7 +56,7 @@ export const Product = () => {
           <div className="product-item">
             <button className="product-btn" type="button">
               <div className="product-title">Happy Paul</div>
-              <span>SVG</span>
+              <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
           </div>
@@ -62,7 +64,7 @@ export const Product = () => {
           <div className="product-item">
             <button className="product-btn" type="button">
               <div className="product-title">Dermapen</div>
-              <span>SVG</span>
+              <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
           </div>
@@ -70,7 +72,7 @@ export const Product = () => {
           <div className="product-item">
             <button className="product-btn" type="button">
               <div className="product-title">Selahatin</div>
-              <span>SVG</span>
+              <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
           </div>
