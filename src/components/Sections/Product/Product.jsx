@@ -3,6 +3,15 @@ import prodImg from "/ocean.jpg";
 import iconArrowUp from "../../../assets/icon_arrow-up.svg";
 import iconArrowDown from "../../../assets/icon_arrow-down.svg";
 
+/*
+productInfo.json
+
+title
+info
+link to page Läs mer!
+
+
+*/
 export const Product = () => {
   return (
     <section className="product-container">
@@ -18,7 +27,7 @@ export const Product = () => {
           {/* Nimue */}
           <div className="product-item">
             <button className="product-btn" type="button">
-              <div className="product-title">Nimue</div>
+              <h4 className="product-title">Nimue</h4>
               <img src={iconArrowUp} alt="Icon Contact" />
             </button>
             <div className="">
@@ -33,7 +42,7 @@ export const Product = () => {
           {/* pHformula */}
           <div className="product-item">
             <button className="product-btn" type="button">
-              <div className="product-title">pHformula</div>
+              <h4 className="product-title">pHformula</h4>
               <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden">
@@ -47,7 +56,7 @@ export const Product = () => {
           {/* DrK Dermal Health Care*/}
           <div className="product-item">
             <button className="product-btn" type="button">
-              <div className="product-title">DrK Dermal Health Care</div>
+              <h4 className="product-title">DrK Dermal Health Care</h4>
               <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
@@ -55,7 +64,7 @@ export const Product = () => {
           {/* Happy Paul */}
           <div className="product-item">
             <button className="product-btn" type="button">
-              <div className="product-title">Happy Paul</div>
+              <h4 className="product-title">Happy Paul</h4>
               <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
@@ -63,7 +72,7 @@ export const Product = () => {
           {/* Dermapen*/}
           <div className="product-item">
             <button className="product-btn" type="button">
-              <div className="product-title">Dermapen</div>
+              <h4 className="product-title">Dermapen</h4>
               <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>
@@ -71,7 +80,7 @@ export const Product = () => {
           {/* Selahatin */}
           <div className="product-item">
             <button className="product-btn" type="button">
-              <div className="product-title">Selahatin</div>
+              <h4 className="product-title">Selahatin</h4>
               <img src={iconArrowDown} alt="Icon Contact" />
             </button>
             <div className="overflow-hidden"></div>

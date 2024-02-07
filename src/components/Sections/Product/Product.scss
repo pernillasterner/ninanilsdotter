@@ -40,6 +40,16 @@
         display: flex;
         justify-content: space-between;
 
+        .product-title {
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          line-height: normal;
+          font-family: inherit;
+          font-size: 100%;
+          font-weight: 500;
+          cursor: pointer;
+        }
+
         img {
           width: 16px;
         }
