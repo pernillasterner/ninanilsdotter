@@ -4,9 +4,28 @@
   .text-banner {
     padding: var(--general-padding);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     p {
-      line-height: 2;
+      line-height: 1.5;
+      font-family: "Montserrat", sans-serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 1000px;
+    }
+
+    .certificate-logo {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 80px;
+        width: auto;
+        object-fit: cover;
+        margin: var(--general-smaller-margin);
+      }
     }
   }
 }
