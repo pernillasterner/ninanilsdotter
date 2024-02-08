@@ -1,0 +1,12 @@
+.treatment-container {
+  padding: var(--general-padding);
+
+  .text-banner {
+    padding: var(--general-padding);
+    text-align: center;
+
+    p {
+      line-height: 2;
+    }
+  }
+}
