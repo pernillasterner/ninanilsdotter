@@ -5,20 +5,10 @@ import iconArrowDown from "../../../assets/icon_arrow-down.svg";
 import { useState } from "react";
 import products from "../../../data/products.json";
 
-/*
-productInfo.json
-
-title
-info
-link to page Läs mer!
-
-
-*/
 export const Product = () => {
   const [activeDropdown, setActiveDropdown] = useState(false);
 
   const handleDropdown = (key) => {
-    // Lägga till active classen
     setActiveDropdown((prev) => (prev === key ? null : key));
   };
 
