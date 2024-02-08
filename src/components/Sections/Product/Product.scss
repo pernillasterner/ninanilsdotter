@@ -65,6 +65,23 @@
       &.active {
         max-height: 300px;
       }
+
+      a {
+        margin-top: var(--general-smaller-margin);
+        display: block;
+        color: var(--clr-text);
+        position: relative;
+
+        &::after {
+          content: "";
+          height: 1px;
+          display: block;
+          width: 65px;
+          background: rgba(28, 33, 33, 0.65);
+          position: absolute;
+          bottom: 0;
+        }
+      }
     }
   }
 }

@@ -44,6 +44,9 @@ export const Product = () => {
                 }`}
               >
                 {product.description}
+                <a href={product.link} target="__blank">
+                  Läs mer
+                </a>
               </div>
             </div>
           ))}
