@@ -29,7 +29,17 @@ export const Treatment = () => {
         </div>
       </div>
 
-      <div className="treatments"></div>
+      <div className="treatments">
+        <div className="treatment box-1">
+          <p>Ansiktsbehandling</p>
+        </div>
+        <div className="treatment box-2">
+          <p>Vaxning</p>
+        </div>
+        <div className="treatment box-3">
+          <p>Kroppsbehandling</p>
+        </div>
+      </div>
     </section>
   );
 };

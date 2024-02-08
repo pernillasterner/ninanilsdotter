@@ -1,5 +1,8 @@
 .treatment-container {
   padding: var(--general-padding);
+  @media screen and (max-width: 767px) and (orientation: portrait) {
+    padding: var(--general-mini-padding);
+  }
 
   .text-banner {
     padding: var(--general-padding);
@@ -15,6 +18,9 @@
       font-size: 1.4rem;
       font-weight: 300;
       max-width: 1000px;
+      @media screen and (max-width: 767px) and (orientation: portrait) {
+        font-size: 1.1rem;
+      }
     }
 
     .certificate-logo {
@@ -25,6 +31,55 @@
         width: auto;
         object-fit: cover;
         margin: var(--general-smaller-margin);
+      }
+    }
+  }
+
+  .treatments {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .treatment {
+      width: 30%;
+      min-width: 300px;
+      height: 400px;
+      margin: 2.5%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: flex;
+      align-items: end;
+      @media screen and (max-width: 767px) and (orientation: portrait) {
+        height: 200px;
+        margin: var(--general-smaller-margin);
+        width: 100%;
+      }
+
+      &.box-1 {
+        background: url("../../../assets/facial.jpg") center/cover;
+      }
+      &.box-2 {
+        background: url("../../../assets/wax.jpg") center/cover;
+      }
+      &.box-3 {
+        background: url("../../../assets/body.jpg") center/cover;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(74, 108, 124, 0.28);
+      }
+
+      p {
+        margin-left: 1em;
+        position: relative;
+        color: var(--clr-white);
+        z-index: 50;
+        font-weight: 700;
+        letter-spacing: 1px;
       }
     }
   }
