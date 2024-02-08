@@ -3,6 +3,7 @@ import prodImg from "/ocean.jpg";
 import iconArrowUp from "../../../assets/icon_arrow-up.svg";
 import iconArrowDown from "../../../assets/icon_arrow-down.svg";
 import { useState } from "react";
+import products from "../../../data/products.json";
 
 /*
 productInfo.json
@@ -14,11 +15,11 @@ link to page Läs mer!
 
 */
 export const Product = () => {
-  const [activeDropdown, setActiveDropDown] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(false);
 
-  const handleDropdown = () => {
+  const handleDropdown = (key) => {
     // Lägga till active classen
-    setActiveDropDown(!activeDropdown);
+    setActiveDropdown((prev) => (prev === key ? null : key));
   };
 
   return (
@@ -32,75 +33,30 @@ export const Product = () => {
       <div className="right-box">
         <h3>Produkter</h3>
         <div className="product-list">
-          {/* Nimue */}
-          <div className="product-item">
-            <button className="product-btn" type="button">
-              <h4 className="product-title">Nimue</h4>
-              <img src={iconArrowUp} alt="Icon Contact" />
-            </button>
+          {products.map((product) => (
             <div
-              className={`product-information ${
-                activeDropdown ? "active" : ""
-              }`}
+              key={product.key}
+              className="product-item"
+              onClick={() => handleDropdown(product.key)}
             >
-              Den nya generationens derma cosmeceutical. NIMUE motarbetar hudens
-              biologiska nedbrytning genom att arbeta med den rätta
-              koncentrationen i de rätta kombinationerna och i de rätta
-              styrkorna av Alpha Hydroxy Syror, C- o E-vitamin- estrar och Alpha
-              Lipoic Syra. Nimue lär huden använda sina egna naturliga
-              funktioner för att återställa och bibehålla en hälsosam balans.
+              <button className="product-btn" type="button">
+                <h4 className="product-title">{product.title}</h4>
+                <img
+                  src={
+                    activeDropdown === product.key ? iconArrowUp : iconArrowDown
+                  }
+                  alt="Icon Contact"
+                />
+              </button>
+              <div
+                className={`product-information ${
+                  activeDropdown === product.key ? "active" : ""
+                }`}
+              >
+                {product.description}
+              </div>
             </div>
-          </div>
-          {/* pHformula */}
-          <div className="product-item">
-            <button
-              className="product-btn"
-              type="button"
-              onClick={() => handleDropdown()}
-            >
-              <h4 className="product-title">pHformula</h4>
-              <img src={iconArrowDown} alt="Icon Contact" />
-            </button>
-            <div className={`description ${activeDropdown ? "active" : ""}`}>
-              pHformula – är en pharma-cosmeceutical vilken är i gränslandet
-              mellan den nya generationen av cosmeceuticals och läkemedel. Denna
-              dermatologiska teknologi återskapar en optimalt välmående hud och
-              fokuserar på ett antal olika hudtillstånd, t.ex. för tidigt
-              åldrande, känslig hud, rosacea, acne och hyperpigmenterad hud.
-            </div>
-          </div>
-          {/* DrK Dermal Health Care*/}
-          <div className="product-item">
-            <button className="product-btn" type="button">
-              <h4 className="product-title">DrK Dermal Health Care</h4>
-              <img src={iconArrowDown} alt="Icon Contact" />
-            </button>
-            <div className="overflow-hidden"></div>
-          </div>
-          {/* Happy Paul */}
-          <div className="product-item">
-            <button className="product-btn" type="button">
-              <h4 className="product-title">Happy Paul</h4>
-              <img src={iconArrowDown} alt="Icon Contact" />
-            </button>
-            <div className="overflow-hidden"></div>
-          </div>
-          {/* Dermapen*/}
-          <div className="product-item">
-            <button className="product-btn" type="button">
-              <h4 className="product-title">Dermapen</h4>
-              <img src={iconArrowDown} alt="Icon Contact" />
-            </button>
-            <div className="overflow-hidden"></div>
-          </div>
-          {/* Selahatin */}
-          <div className="product-item">
-            <button className="product-btn" type="button">
-              <h4 className="product-title">Selahatin</h4>
-              <img src={iconArrowDown} alt="Icon Contact" />
-            </button>
-            <div className="overflow-hidden"></div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
