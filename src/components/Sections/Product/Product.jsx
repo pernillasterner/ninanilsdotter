@@ -13,7 +13,7 @@ export const Product = () => {
   };
 
   return (
-    <section className="product-container">
+    <section id="product" className="product-container">
       <div
         className="left-box"
         style={{

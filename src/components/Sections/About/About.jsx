@@ -5,7 +5,7 @@ import { AboutBanner } from "./AboutBanner";
 
 export const About = () => {
   return (
-    <section className="about-container">
+    <section id="about" className="about-container">
       <div className="about-img">
         <img src={aboutNinaImage} alt="Nina Nilsdotter" />
       </div>

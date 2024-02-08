@@ -4,7 +4,7 @@ import iconCert from "../../../assets/cert.jpg";
 
 export const Treatment = () => {
   return (
-    <section className="treatment-container">
+    <section id="treatment" className="treatment-container">
       <div className="text-banner">
         <p>
           Jag använder inga färdiga behandlingskoncept utan utgår istället helt

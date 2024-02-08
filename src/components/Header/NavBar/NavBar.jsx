@@ -7,13 +7,13 @@ export const NavBar = () => {
       <div className="header-nav-wrapper">
         <nav className="header-nav-list">
           <div className="header-nav-item">
-            <a href="#produkter">Produkter</a>
+            <a href="#about">Om Nina</a>
           </div>
           <div className="header-nav-item">
-            <a href="#behandlingar">Behandlingar</a>
+            <a href="#product">Produkter</a>
           </div>
           <div className="header-nav-item">
-            <a href="#erbjudanden">Erbjudanden</a>
+            <a href="#treatment">Behandlingar</a>
           </div>
           <div className="header-nav-item">
             <a href="#kontakt">Kontakt</a>
