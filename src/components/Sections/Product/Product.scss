@@ -35,10 +35,11 @@
       margin-top: 2rem;
       .product-btn {
         border-top: 1px solid #0000001a;
-        padding: var(--general-smaller-padding) 0;
+        padding: var(--general-mini-padding) 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: start;
 
         .product-title {
           color: var(--clr-text);
@@ -56,9 +57,14 @@
         }
       }
     }
-    .overflow-hidden {
+    .product-information {
+      transition: max-height 0.6s ease;
       overflow: hidden;
-      height: 0px;
+      max-height: 0px;
+
+      &.active {
+        max-height: 300px;
+      }
     }
   }
 }

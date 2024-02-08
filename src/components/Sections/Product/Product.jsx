@@ -2,6 +2,7 @@ import "./Product.scss";
 import prodImg from "/ocean.jpg";
 import iconArrowUp from "../../../assets/icon_arrow-up.svg";
 import iconArrowDown from "../../../assets/icon_arrow-down.svg";
+import { useState } from "react";
 
 /*
 productInfo.json
@@ -13,6 +14,13 @@ link to page Läs mer!
 
 */
 export const Product = () => {
+  const [activeDropdown, setActiveDropDown] = useState(false);
+
+  const handleDropdown = () => {
+    // Lägga till active classen
+    setActiveDropDown(!activeDropdown);
+  };
+
   return (
     <section className="product-container">
       <div
@@ -30,7 +38,11 @@ export const Product = () => {
               <h4 className="product-title">Nimue</h4>
               <img src={iconArrowUp} alt="Icon Contact" />
             </button>
-            <div className="">
+            <div
+              className={`product-information ${
+                activeDropdown ? "active" : ""
+              }`}
+            >
               Den nya generationens derma cosmeceutical. NIMUE motarbetar hudens
               biologiska nedbrytning genom att arbeta med den rätta
               koncentrationen i de rätta kombinationerna och i de rätta
@@ -41,11 +53,15 @@ export const Product = () => {
           </div>
           {/* pHformula */}
           <div className="product-item">
-            <button className="product-btn" type="button">
+            <button
+              className="product-btn"
+              type="button"
+              onClick={() => handleDropdown()}
+            >
               <h4 className="product-title">pHformula</h4>
               <img src={iconArrowDown} alt="Icon Contact" />
             </button>
-            <div className="overflow-hidden">
+            <div className={`description ${activeDropdown ? "active" : ""}`}>
               pHformula – är en pharma-cosmeceutical vilken är i gränslandet
               mellan den nya generationen av cosmeceuticals och läkemedel. Denna
               dermatologiska teknologi återskapar en optimalt välmående hud och
