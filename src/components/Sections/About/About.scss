@@ -20,7 +20,7 @@
   }
 
   .about-img img {
-    max-height: 700px;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -38,9 +38,6 @@
     .signature img {
       height: 50px;
       width: auto;
-      @media (max-width: 767px) {
-        transform: rotate(0deg);
-      }
     }
   }
 }
