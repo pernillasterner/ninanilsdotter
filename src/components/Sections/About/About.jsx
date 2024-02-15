@@ -19,7 +19,7 @@ export const About = () => {
           vårdar sig hemma skall samspela för att uppnå bästa resultat.
         </p>
         <div className="signature">
-          <img src={signatureImage} alt="Signature" width={553} height={257} />
+          <img src={signatureImage} alt="Signature" width={200} height={50} />
         </div>
       </div>
       {/* <AboutBanner /> */}
