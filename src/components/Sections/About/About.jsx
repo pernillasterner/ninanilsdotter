@@ -18,9 +18,9 @@ export const About = () => {
           behandlingar, produkter och information om hur man på bästa sätt
           vårdar sig hemma skall samspela för att uppnå bästa resultat.
         </p>
-        <div className="signature">
+        {/* <div className="signature">
           <img src={signatureImage} alt="Signature" width={200} height={50} />
-        </div>
+        </div> */}
       </div>
       {/* <AboutBanner /> */}
     </section>
