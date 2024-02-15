@@ -16,7 +16,9 @@ export const NavBar = () => {
             <a href="#treatment">Behandlingar</a>
           </div>
           <div className="header-nav-item">
-            <a href="#kontakt">Kontakt</a>
+            <a href="#">
+              <strong>070-881 98 18</strong>
+            </a>
           </div>
         </nav>
       </div>
