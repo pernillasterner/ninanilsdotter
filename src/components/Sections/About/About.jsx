@@ -1,6 +1,6 @@
 import "./About.scss";
 import aboutNinaImage from "/nina_point_w800-752x1024.jpg";
-import signatureImage from "/nina_nilsdotter_signature_small.png";
+import signatureImage from "/logo.svg";
 import { AboutBanner } from "./AboutBanner";
 
 export const About = () => {
