@@ -13,11 +13,21 @@
     .header-nav-item {
       text-transform: uppercase;
       margin-left: 1.6vw;
+      position: relative;
       a {
         transition: background-color 0.1s 0s ease-in-out,
           color 0.1s 0s ease-in-out;
         &:hover {
           color: rgba(255, 255, 255, 0.74);
+        }
+
+        span {
+          position: absolute;
+          text-transform: initial;
+          font-style: italic;
+          font-size: 0.8rem;
+          top: -20px;
+          right: 0;
         }
       }
     }

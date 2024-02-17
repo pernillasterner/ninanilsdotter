@@ -17,6 +17,7 @@ export const NavBar = () => {
           </div>
           <div className="header-nav-item">
             <a href="#">
+              <span>Messa mig!</span>
               <strong>070-881 98 18</strong>
             </a>
           </div>
