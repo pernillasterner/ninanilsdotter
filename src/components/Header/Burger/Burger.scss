@@ -114,3 +114,12 @@
     background-color: #828082;
   }
 }
+.header.scrolled .burger-inner {
+  &.cross {
+    .top-bun,
+    .patty,
+    .bottom-bun {
+      background-color: #fff;
+    }
+  }
+}
