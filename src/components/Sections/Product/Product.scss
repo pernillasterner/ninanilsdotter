@@ -63,7 +63,8 @@
       max-height: 0px;
 
       &.active {
-        max-height: 500px;
+        max-height: 2000px;
+        white-space: pre-wrap;
       }
 
       a {

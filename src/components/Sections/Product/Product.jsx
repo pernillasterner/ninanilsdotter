@@ -1,5 +1,6 @@
 import "./Product.scss";
-import prodImg from "/ocean.jpg";
+// import prodImg from "/ocean.jpg";
+import offerImg from "../../../assets/offers/phformula-feb.png";
 import iconArrowUp from "../../../assets/icon_arrow-up.svg";
 import iconArrowDown from "../../../assets/icon_arrow-down.svg";
 import { useState } from "react";
@@ -17,9 +18,10 @@ export const Product = () => {
       <div
         className="left-box"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 100%), url(${prodImg})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 100%), url(${offerImg})`,
         }}
       ></div>
+
       <div className="right-box">
         <h3>Produkter</h3>
         <div className="product-list">
@@ -43,7 +45,9 @@ export const Product = () => {
                   activeDropdown === product.key ? "active" : ""
                 }`}
               >
-                {product.description}
+                {product.description.split("\n").map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
                 <a href={product.link} target="__blank">
                   Läs mer
                 </a>
