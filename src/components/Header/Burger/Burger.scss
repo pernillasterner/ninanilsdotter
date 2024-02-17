@@ -58,6 +58,20 @@
     .bottom-bun {
       transform: translatey(5.5px);
     }
+
+    &.cross {
+      .top-bun {
+        transform: rotate(45deg) translateY(0);
+      }
+
+      .patty {
+        transform: scale(0);
+      }
+
+      .bottom-bun {
+        transform: rotate(-45deg) translateY(0);
+      }
+    }
   }
 
   // Nav menu

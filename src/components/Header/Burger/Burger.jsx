@@ -7,9 +7,9 @@ export const Burger = ({ isOpen, onClick }) => {
   return (
     <div className={`header-burger ${isOpen ? "open" : ""}`} onClick={onClick}>
       <button className="header-burger-btn burger">
-        <div className={`burger-box  burger ${isOpen ? "cross" : ""}`}>
+        <div className="burger-box  burger">
           {/* <div className="burger-box burger"> */}
-          <div className="burger-inner">
+          <div className={`burger-inner ${isOpen ? "cross" : ""}`}>
             <div className="top-bun"></div>
             <div className="patty"></div>
             <div className="bottom-bun"></div>
