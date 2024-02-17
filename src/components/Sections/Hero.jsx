@@ -36,7 +36,7 @@ export const Hero = () => {
           välbefinnande och att känna sig i balans och lycklig med sig själv.
         </p>
         <button className="hero-btn" aria-label="Boka Nu">
-          <a href="#contact-container">boka nu</a>
+          <a href="mailto:info@ninanilsdotter.se">kontakt</a>
         </button>
       </div>
     </section>
