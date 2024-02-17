@@ -13,6 +13,7 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
+    z-index: 77777;
   }
 
   .burger-box {
@@ -56,6 +57,31 @@
 
     .bottom-bun {
       transform: translatey(5.5px);
+    }
+  }
+
+  // Nav menu
+  .header-nav-list {
+    position: absolute;
+    background: var(--clr-primary);
+
+    width: 100%;
+    height: -100vh;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header-nav-item {
+      margin: 20px 0;
+
+      a {
+        font-size: 1.4rem;
+      }
     }
   }
 }

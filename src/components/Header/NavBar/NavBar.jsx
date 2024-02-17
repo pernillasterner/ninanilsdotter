@@ -1,11 +1,12 @@
 import "./NavBar.scss";
 
-export const NavBar = () => {
+export const NavBar = ({ isOpen }) => {
   return (
     <div className="header-nav">
       {/* Nav */}
       <div className="header-nav-wrapper">
-        <nav className="header-nav-list">
+        <nav className={`header-nav-list ${isOpen ? "open" : ""}`}>
+          {/* <nav className="header-nav-list"> */}
           <div className="header-nav-item">
             <a href="#about">Om Nina</a>
           </div>
