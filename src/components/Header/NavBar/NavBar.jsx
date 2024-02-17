@@ -6,7 +6,6 @@ export const NavBar = ({ isOpen }) => {
       {/* Nav */}
       <div className="header-nav-wrapper">
         <nav className={`header-nav-list ${isOpen ? "open" : ""}`}>
-          {/* <nav className="header-nav-list"> */}
           <div className="header-nav-item">
             <a href="#about">Om Nina</a>
           </div>

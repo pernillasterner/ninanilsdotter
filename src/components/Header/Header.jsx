@@ -8,7 +8,6 @@ export const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleBurgerClick = () => {
-    console.log("test");
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 

@@ -1,14 +1,10 @@
-import { useState } from "react";
 import "./Burger.scss";
 
 export const Burger = ({ isOpen, onClick }) => {
-  console.log(isOpen, onClick);
-
   return (
     <div className={`header-burger ${isOpen ? "open" : ""}`} onClick={onClick}>
       <button className="header-burger-btn burger">
         <div className="burger-box  burger">
-          {/* <div className="burger-box burger"> */}
           <div className={`burger-inner ${isOpen ? "cross" : ""}`}>
             <div className="top-bun"></div>
             <div className="patty"></div>
@@ -31,7 +27,6 @@ export const Burger = ({ isOpen, onClick }) => {
           </div>
           <div className="header-nav-item">
             <a href="#">
-              {/* <span>Messa mig!</span> */}
               <strong>070-881 98 18</strong>
             </a>
           </div>
