@@ -10,7 +10,9 @@ export const Footer = () => {
             <p>Hör av dig text.</p>
           </div> */}
           <div className="contact-btn">
-            <button>Kontakt</button>
+            <button>
+              <a href="mailto:info@ninanilsdotter.se">kontakt</a>
+            </button>
           </div>
           <div className="adress-info">
             {/* <p className="mail">info@ninanilsdotter.se</p> */}
@@ -18,7 +20,7 @@ export const Footer = () => {
             <h3 className="telefon">070 - 881 98 18</h3>
             <p>
               Nina Nilsdotter | All rights reserved. Site build and designed by{" "}
-              <a href="#" target="_blank">
+              <a href="http://sthlmweb.se" target="_blank">
                 Pernilla Sterner
               </a>
             </p>

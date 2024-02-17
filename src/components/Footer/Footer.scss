@@ -30,7 +30,9 @@ footer {
     button {
       margin-bottom: var(--general-margin);
       background-color: var(--contactButton);
-      color: var(--clr-white);
+      a {
+        color: var(--clr-white);
+      }
       &:hover {
         background-color: var(--contactButtonHover);
       }
