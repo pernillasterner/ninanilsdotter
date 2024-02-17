@@ -1,6 +1,6 @@
 import "./Product.scss";
 // import prodImg from "/ocean.jpg";
-import offerImg from "../../../assets/offers/phformula-feb.png";
+import offerImg from "../../../assets/offers/happy.jpg";
 import iconArrowUp from "../../../assets/icon_arrow-up.svg";
 import iconArrowDown from "../../../assets/icon_arrow-down.svg";
 import { useState } from "react";
