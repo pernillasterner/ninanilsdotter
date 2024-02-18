@@ -17,6 +17,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    padding: var(--general-padding);
 
     &::before {
       content: "";
@@ -25,6 +26,17 @@
       height: 100%;
       // background-color: rgba(58, 58, 58, 0.38);
       z-index: 50;
+    }
+
+    .content {
+      padding: var(--general-padding);
+      position: absolute;
+      bottom: 0;
+      color: var(--clr-white);
+
+      h3 {
+        font-size: 2rem;
+      }
     }
   }
   .right-box {

@@ -20,10 +20,15 @@ export const Product = () => {
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 100%), url(${offerImg})`,
         }}
-      ></div>
+      >
+        <div className="content">
+          <h3>Happy Paul</h3>
+          <p>En ny sorts wellnessmärke som bara får dig att le.</p>
+        </div>
+      </div>
 
       <div className="right-box">
-        <h3>Produkter</h3>
+        <h3>Utvalda varumärken</h3>
         <div className="product-list">
           {products.map((product) => (
             <div
