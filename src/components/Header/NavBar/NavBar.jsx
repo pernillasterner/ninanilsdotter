@@ -10,7 +10,7 @@ export const NavBar = ({ isOpen }) => {
             <a href="#about">Om Nina</a>
           </div>
           <div className="header-nav-item">
-            <a href="#product">Produkter</a>
+            <a href="#product">Varumärken</a>
           </div>
           <div className="header-nav-item">
             <a href="#treatment">Behandlingar</a>
